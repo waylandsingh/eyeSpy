@@ -1,0 +1,20 @@
+{
+    "name": "eyeSpye",
+    "version": "1.0.0",
+    "description": "tracks and distracts",
+    "manifest_version": 3,
+    "author": "Wayland and Richard",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "eyeSpye"
+    },
+    "content_scripts" : [
+        {        
+            "matches":["https://*/*"],
+            "js": ["./main.js", "./webgazer.js"]
+        }
+    ]
+
+    
+    
+}
